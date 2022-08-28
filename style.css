@@ -1,0 +1,180 @@
+*{
+    margin:0
+}
+
+body{
+    background:linear-gradient(135deg, #cabe2f, #fcfcfc) ;
+}
+
+.header{
+    display:flex;
+    align-items:center;
+    padding:5px;
+    border-bottom: 10px;
+    border-bottom-color:(236,239,241);
+    margin-left: 0;
+    background-color: black;
+    justify-content:space-between;
+
+}
+
+.lef-nav{
+    display:flex;
+    color:white;
+    margin-left:120px;
+ 
+}
+
+.lef-nav p{
+    display:flex;
+    margin-right:30px;  
+}
+
+
+.right-nav{
+    display:flex;
+    margin:0;
+    align-items:center;
+    color:white;
+    margin-right:100px
+}
+
+
+.content h3{
+    text-align:center;
+    padding-top:20px;
+    font-weight: bold;
+    font-size:30px;
+}
+
+.content h4{ 
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-align:center;
+    font-weight:bold;
+    font-size:18px
+}
+
+.form{
+    border: 1px solid rgb(195, 193, 193);
+    border-radius:34px;
+    max-width: 100%;
+    width: 450px;
+    margin:auto;
+    margin-top:10px;
+    padding-bottom: 20px;
+    margin-bottom:20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgb(255, 255, 255);
+    
+}
+
+/* input box */
+.inpt{ 
+    border-radius:10px;
+    border:1px solid gray;
+    padding-left:10px;
+    margin-top:3px;
+    padding-top:3px;
+    padding-bottom:3px;
+    box-shadow: 0.5px 0.5px rgb(120, 121, 121);
+    width:190px;
+}
+
+
+.details{
+    display:flex;
+    margin-bottom:15px;
+    text-align:center;
+}
+.details label{
+    display:flex;
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* personal info left side */
+.pleft{
+    flex:1;
+    margin:0;
+}
+
+
+/* personal info right side */
+.pright{
+    flex:1;
+    margin-left: 35px;
+}
+
+.additional-info{
+    align-items:center;
+    border-radius: 20px;
+    width: 330px;
+    height:80px;
+    margin-top:20px;
+    box-shadow: 0.5px 0.5px rgb(120, 121, 121);
+    padding:20px;
+}
+
+.submit-btn{
+    background-color:rgb(54, 54, 54);
+    color:white;
+    padding:8px 25px;
+    border-radius:30px;
+    border:none;
+    margin-top:20px;
+}
+.sub-btn{
+    text-align:center;
+}
+
+/* additional information box */
+.add{
+    text-align:center;
+}
+
+#location{
+    width:180px;
+    border-radius:9px
+
+}
+
+.event-info{
+    position:relative;
+}
+
+.personal-details{
+    position:relative;
+}
+
+/* styling for yellow line */
+.ruler, .ruler2, .ruler11, .ruler12 {
+    position: absolute;
+    top: 10px;
+    right: 280px;
+    width: 140px;
+    height: 5px;
+    background:linear-gradient(135deg, #cabe2f, #ede209);
+    border-radius: 2px;
+  }
+  .ruler2 {
+    top: 10px;
+    left: 280px;
+    background:linear-gradient(135deg, #ede209, #cabe2f);
+  }
+  
+  .ruler11{
+    right: 300px;
+    width: 140px;
+    height: 5px;
+    background:linear-gradient(135deg, #cabe2f, #ede209);
+    border-radius: 2px;
+  }
+  .ruler12 {
+    left: 300px;
+    background:linear-gradient(135deg, #ede209, #cabe2f);
+  }
+
+  /* styling for yellow line */

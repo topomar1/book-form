@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<!-- saved from url=(0037)http://127.0.0.1:5500/book-event.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Book Event</title>
+<link rel="stylesheet" href="./Book Event_files/style.css"></head>
+<body>
+    <div class="header">
+        <div class="lef-nav">
+            <p>Home</p>
+            <p>About Us</p>
+            <p>Features</p>
+            <p>Order Gift</p>
+            <p>Book Event</p>
+            <p>Contact Us</p>
+        </div>
+        <div class="right-nav">
+            <p>Basket</p>
+        </div>
+    </div>
+    <div class="content">
+        <h3>Book Event</h3>
+        <div class="form">
+            <div class="personal-details">
+                <h4>Personal Details</h4>
+                <div class="details">
+                    <div class="pleft">
+                        <label for="fname">First Name</label>
+                        <input class="inpt fname" type="text" id="fname" placeholder="First Name">
+                    </div>
+                    <div class="pright">
+                        <label for="fname">Last Name</label>
+                        <input class="inpt lname" type="text" id="lname" placeholder="Last Name">
+                    </div>
+
+                </div>
+                <div class="details">
+                    <div class="pleft">
+                        <label for="fname">Phone Number</label>
+                        <input class="inpt fname" type="text" id="number" placeholder="Phone Number">
+                    </div>
+                    <div class="pright">
+                        <label for="fname">Email Address</label>
+                        <input class="inpt lname" type="email" id="email" placeholder="Email Address">
+                        
+                    </div>
+
+                </div>
+                
+                
+            </div>
+
+            <div class="event-info personal-details">
+                <h4>Event Info</h4>
+                <div class="details">
+                    <div class="pleft">
+                        <label for="event">Choose Event</label>
+                        <select class="inpt sel" name="event" id="event">
+                            <option value="Event1">Event1</option>
+                            <option value="Event2">Event2</option>
+                            <option value="Event3">Event3</option>
+                            <option value="Event4">Event4</option>
+                            <option value="Event5">Event5</option>
+                          </select>
+                    </div>
+                    <div class="pright">
+                        <label for="fname">Choose Package</label>
+                        <select class="inpt sel" name="package" id="package">
+                            <option value="Package1">Package1</option>
+                            <option value="Package2">Package2</option>
+                            <option value="Package3">Package3</option>
+                            <option value="Package4">Package4</option>
+                            <option value="Package5">Package5</option>
+                          </select>
+                    </div>
+
+                </div>
+                <div class="details">
+                    <div class="pleft">
+                        <label for="fname">Number of Guests</label>
+                        <select class="inpt sel" name="number-of-guest" id="cars">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="text">6+</option>
+                          </select>
+                        <!-- <input class="inpt fname"type="text" id="fname" placeholder="First Name"> -->
+                    </div>
+                    <div class="pright">
+                        <label for="fname">Location</label>
+                        <input class="inpt lname" type="text" id="location" placeholder="Location">
+                    
+                    </div>
+
+                </div>
+                <div class="details">
+                    <div class="pleft">
+                        <label for="fname">Start</label>
+                        <select class="inpt sel" name="start" id="start">
+                            <option value="Start1">Start1</option>
+                            <option value="Start2">Start2</option>
+                            <option value="Start3">Start3</option>
+                            
+                          </select>
+                    </div>
+                    <div class="pright">
+                        <label for="fname">End</label>
+                        <select class="inpt sel" name="end" id="end">
+                            <option value="End1">End1</option>
+                            <option value="End2">End2</option>
+                            <option value="End3">End3</option>
+                            
+                          </select>
+                    </div>
+
+                </div>
+                
+                
+            </div>
+            <div class="add">  
+                <textarea placeholder="Additional Inforamtion" class="additional-info" name="additional-info" rows="4" cols="50"></textarea>
+            </div>
+            <div class="sub-btn">
+                <input class="submit-btn" type="submit">
+            </div>
+            
+        </div>
+        
+    </div>
+
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body></html>
